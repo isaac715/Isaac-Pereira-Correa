@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Pereira Correa | Sobre mim</title>
+
+  <!-- Fonte do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVEGAÇÃO PRINCIPAL
+       Visível em todas as páginas | Links interligam as 4 páginas
+  ======================================================== -->
+  <nav role="navigation" aria-label="Menu principal">
+    <div class="nav-logo">Isaac<span>.</span>dev</div>
+
+    <!-- Botão hambúrguer - aparece só no mobile (JavaScript controla) -->
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Links de navegação entre as 4 páginas -->
+    <ul class="nav-links">
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- Botão de alternar tema claro/escuro (JavaScript) -->
+    <button id="btn-tema" aria-label="Alternar tema">🌙 Escuro</button>
+  </nav>
+
+  <!-- ========================================================
+       HERO - Apresentação rápida
+  ======================================================== -->
+  <header class="hero" role="banner">
+    <div class="hero-badge">Tecnologia &amp; Agronegócio</div>
+    <h1>Olá, sou <span>Isaac Pereira Correa</span></h1>
+    <p class="hero-sub">
+      Estudante de Ciência da Computação · Especialista em Tecnologia na John Deere ·
+      Balsas, Maranhão
+    </p>
+    <div class="hero-btns">
+      <a href="portfolio.html" class="btn-primary">Ver Portfólio</a>
+      <a href="contato.html" class="btn-outline">Entrar em contato</a>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       SEÇÃO: SOBRE MIM
+       Conteúdo: apresentação pessoal e hobbies
+  ======================================================== -->
+  <main>
+    <section class="secao" aria-labelledby="titulo-sobre">
+      <h2 class="secao-titulo" id="titulo-sobre">Sobre mim</h2>
+      <p class="secao-desc">Conheça um pouco mais sobre quem eu sou e o que me motiva.</p>
+
+      <div class="sobre-grid">
+
+        <!-- Avatar com iniciais -->
+        <div class="sobre-avatar" aria-hidden="true">IP</div>
+
+        <!-- Informações pessoais -->
+        <div class="sobre-info">
+          <h2>Isaac Pereira Correa</h2>
+          <p class="tag-local">
+            📍 Balsas, Maranhão — Natural de Sambaíba / MA
+          </p>
+
+          <p>
+            Olá! Me chamo Isaac, sou natural de Sambaíba, Maranhão. Atualmente
+            curso <strong>Ciência da Computação</strong> pela UNINTER e trabalho em
+            uma concessionária da <strong>John Deere</strong> na área de tecnologia,
+            no time de <em>Soluções Integradas</em>.
+          </p>
+
+          <p>
+            No meu dia a dia, estudo e aplico tecnologias voltadas às máquinas
+            agrícolas, conectando o mundo do agronegócio com a inovação digital.
+            Acredito que a tecnologia é a ponte entre a terra e o futuro.
+          </p>
+
+          <p>
+            Sou movido pela curiosidade e pela vontade de aprender sempre mais,
+            seja sobre software, hardware ou as novas fronteiras da agricultura
+            de precisão.
+          </p>
+
+          <!-- Hobbies com tags visuais -->
+          <div class="hobbies-list" aria-label="Hobbies">
+            <span class="hobby-tag">🎬 After Effects</span>
+            <span class="hobby-tag">💻 Programação</span>
+            <span class="hobby-tag">🌾 Agricultura de Precisão</span>
+            <span class="hobby-tag">🚜 Máquinas Agrícolas</span>
+          </div>
+        </div>
+
+      </div><!-- fim sobre-grid -->
+    </section>
+
+    <!-- Destaques em cards -->
+    <section class="secao" aria-label="Destaques">
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Formação em andamento</h3>
+          <p>Ciência da Computação na UNINTER, buscando unir teoria e prática no dia a dia.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚜</div>
+          <h3>Tecnologia no Campo</h3>
+          <p>Trabalho com soluções integradas na John Deere, conectando máquinas e dados para o agronegócio.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Agricultura de Precisão</h3>
+          <p>Certificações pela John Deere University em Fundamentos em Agricultura de Precisão.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       RODAPÉ
+  ======================================================== -->
+  <footer>
+    <p>© 2025 <span>Isaac Pereira Correa</span> · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <!-- Script principal (tema, menu, formulário) -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

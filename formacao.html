@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Pereira Correa | Formação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVEGAÇÃO PRINCIPAL (idêntica em todas as páginas)
+  ======================================================== -->
+  <nav role="navigation" aria-label="Menu principal">
+    <div class="nav-logo">Isaac<span>.</span>dev</div>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <button id="btn-tema" aria-label="Alternar tema">🌙 Escuro</button>
+  </nav>
+
+  <!-- ========================================================
+       HERO da página
+  ======================================================== -->
+  <header class="hero" role="banner">
+    <div class="hero-badge">Educação &amp; Certificações</div>
+    <h1>Minha <span>Formação</span></h1>
+    <p class="hero-sub">
+      Trajetória educacional, cursos técnicos e idiomas que constroem minha base profissional.
+    </p>
+  </header>
+
+  <!-- ========================================================
+       SEÇÃO: LINHA DO TEMPO EDUCACIONAL
+  ======================================================== -->
+  <main>
+    <section class="secao" aria-labelledby="titulo-formacao">
+      <h2 class="secao-titulo" id="titulo-formacao">Formação Acadêmica</h2>
+      <p class="secao-desc">Minha trajetória de aprendizado, do ensino médio à graduação.</p>
+
+      <!-- Linha do tempo - cada item é um período educacional -->
+      <div class="linha-tempo">
+
+        <!-- Item 1: Ensino Médio -->
+        <div class="linha-item">
+          <h3>Ensino Médio Completo</h3>
+          <p class="inst">Escola Estadual — Sambaíba, MA</p>
+          <p class="periodo">📅 Concluído</p>
+          <p>
+            Base de ensino fundamental para ingresso no nível superior,
+            com foco em ciências exatas e tecnologia.
+          </p>
+        </div>
+
+        <!-- Item 2: Graduação em andamento -->
+        <div class="linha-item">
+          <h3>Bacharelado em Ciência da Computação</h3>
+          <p class="inst">UNINTER – Centro Universitário Internacional</p>
+          <p class="periodo">📅 Em andamento</p>
+          <p>
+            Curso superior com ênfase em algoritmos, programação, banco de dados,
+            redes e sistemas de informação. Cursado na modalidade EAD,
+            conciliando com a vida profissional.
+          </p>
+        </div>
+
+      </div><!-- fim linha-tempo formação -->
+    </section>
+
+    <!-- ========================================================
+         SEÇÃO: CURSOS COMPLEMENTARES
+    ======================================================== -->
+    <section class="secao" aria-labelledby="titulo-cursos">
+      <h2 class="secao-titulo" id="titulo-cursos">Cursos &amp; Certificações</h2>
+      <p class="secao-desc">Treinamentos especializados realizados através da John Deere e John Deere University.</p>
+
+      <div class="linha-tempo">
+
+        <!-- Certificação: Agricultura de Precisão -->
+        <div class="linha-item">
+          <h3>Fundamentos em Agricultura de Precisão</h3>
+          <p class="inst">John Deere University</p>
+          <p class="periodo">📅 Certificado</p>
+          <p>
+            Curso focado nos pilares da agricultura de precisão: coleta e análise
+            de dados geoespaciais, variabilidade de solo, telemetria de máquinas
+            e uso de tecnologia para otimização da produtividade no campo.
+          </p>
+        </div>
+
+        <!-- Treinamentos internos John Deere -->
+        <div class="linha-item">
+          <h3>Treinamentos Técnicos — Soluções Integradas</h3>
+          <p class="inst">John Deere</p>
+          <p class="periodo">📅 Contínuo</p>
+          <p>
+            Capacitações relacionadas às tecnologias das máquinas agrícolas John Deere,
+            incluindo sistemas de conectividade, Operation Center, monitoramento remoto
+            e suporte técnico especializado.
+          </p>
+        </div>
+
+        <!-- Fundamentos de Web -->
+        <div class="linha-item">
+          <h3>Fundamentos da Programação Web</h3>
+          <p class="inst">UNINTER – Centro Universitário Internacional</p>
+          <p class="periodo">📅 Em andamento</p>
+          <p>
+            Disciplina da graduação cobrindo HTML5, CSS3 e JavaScript com desenvolvimento
+            de projetos práticos como este portfólio online.
+          </p>
+        </div>
+
+      </div><!-- fim linha-tempo cursos -->
+    </section>
+
+    <!-- ========================================================
+         SEÇÃO: IDIOMAS
+    ======================================================== -->
+    <section class="secao" aria-labelledby="titulo-idiomas">
+      <h2 class="secao-titulo" id="titulo-idiomas">Idiomas</h2>
+      <p class="secao-desc">Nível de proficiência nos idiomas que utilizo.</p>
+
+      <!-- Barra de progresso visual para cada idioma -->
+      <div style="max-width: 480px;">
+
+        <div class="idioma-item">
+          <div class="idioma-label">
+            <span>🇧🇷 Português</span>
+            <span>Nativo</span>
+          </div>
+          <div class="barra-bg">
+            <div class="barra-fill" style="width: 100%;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="idioma-item">
+          <div class="idioma-label">
+            <span>🇺🇸 Inglês</span>
+            <span>Básico / Técnico</span>
+          </div>
+          <div class="barra-bg">
+            <div class="barra-fill" style="width: 40%;" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       RODAPÉ
+  ======================================================== -->
+  <footer>
+    <p>© 2025 <span>Isaac Pereira Correa</span> · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

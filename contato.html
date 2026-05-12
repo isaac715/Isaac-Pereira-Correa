@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Pereira Correa | Contato</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVEGAÇÃO PRINCIPAL (idêntica em todas as páginas)
+  ======================================================== -->
+  <nav role="navigation" aria-label="Menu principal">
+    <div class="nav-logo">Isaac<span>.</span>dev</div>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <button id="btn-tema" aria-label="Alternar tema">🌙 Escuro</button>
+  </nav>
+
+  <!-- ========================================================
+       HERO da página
+  ======================================================== -->
+  <header class="hero" role="banner">
+    <div class="hero-badge">Vamos conversar</div>
+    <h1>Entre em <span>Contato</span></h1>
+    <p class="hero-sub">
+      Tem um projeto, dúvida ou oportunidade? Fique à vontade para me enviar uma mensagem!
+    </p>
+  </header>
+
+  <!-- ========================================================
+       SEÇÃO: CONTATO
+  ======================================================== -->
+  <main>
+    <section class="secao" aria-labelledby="titulo-contato">
+      <h2 class="secao-titulo" id="titulo-contato">Fale comigo</h2>
+      <p class="secao-desc">Respondo por e-mail ou pelo LinkedIn. Use o formulário abaixo!</p>
+
+      <div class="contato-grid">
+
+        <!-- Informações de contato -->
+        <div class="contato-info">
+          <p>
+            Estou sempre aberto a novas conexões, parcerias e oportunidades.
+            Se quiser conversar sobre tecnologia, agronegócio, programação
+            ou qualquer outro assunto, me manda uma mensagem!
+          </p>
+
+          <!-- Links de contato direto -->
+          <div class="contato-links">
+
+            <a href="mailto:isaacytbr@gmail.com" class="contato-link-item" aria-label="Enviar e-mail">
+              <div class="icon" aria-hidden="true">✉️</div>
+              <div>
+                <div style="font-size:0.75rem; color: var(--cinza); font-weight:400;">E-mail</div>
+                <div>isaacytbr@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/"
+               target="_blank" rel="noopener"
+               class="contato-link-item" aria-label="Acessar LinkedIn">
+              <div class="icon" aria-hidden="true">💼</div>
+              <div>
+                <div style="font-size:0.75rem; color: var(--cinza); font-weight:400;">LinkedIn</div>
+                <div>isaac-pereira-correa</div>
+              </div>
+            </a>
+
+            <div class="contato-link-item">
+              <div class="icon" aria-hidden="true">📍</div>
+              <div>
+                <div style="font-size:0.75rem; color: var(--cinza); font-weight:400;">Localização</div>
+                <div>Balsas, Maranhão — Brasil</div>
+              </div>
+            </div>
+
+          </div><!-- fim contato-links -->
+        </div><!-- fim contato-info -->
+
+        <!-- Formulário de contato com validação em JavaScript -->
+        <div class="form-contato" role="form" aria-label="Formulário de contato">
+          <h3>📨 Envie uma mensagem</h3>
+
+          <form id="form-contato" novalidate>
+
+            <!-- Campo: Nome -->
+            <div class="campo">
+              <label for="nome">Nome completo *</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome"
+                autocomplete="name"
+                aria-required="true"
+              />
+              <!-- Mensagem de erro (exibida pelo JavaScript quando inválido) -->
+              <span class="erro-msg" id="erro-nome" role="alert">
+                ⚠️ Por favor, insira seu nome (mínimo 3 caracteres).
+              </span>
+            </div>
+
+            <!-- Campo: E-mail -->
+            <div class="campo">
+              <label for="email">E-mail *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+                aria-required="true"
+              />
+              <!-- Mensagem de erro de e-mail (validado por regex no JavaScript) -->
+              <span class="erro-msg" id="erro-email" role="alert">
+                ⚠️ Por favor, insira um e-mail válido (ex: usuario@dominio.com).
+              </span>
+            </div>
+
+            <!-- Campo: Mensagem -->
+            <div class="campo">
+              <label for="mensagem">Mensagem *</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Escreva sua mensagem aqui..."
+                aria-required="true"
+              ></textarea>
+              <!-- Mensagem de erro da mensagem -->
+              <span class="erro-msg" id="erro-mensagem" role="alert">
+                ⚠️ Por favor, escreva uma mensagem (mínimo 10 caracteres).
+              </span>
+            </div>
+
+            <!-- Botão de envio - JavaScript valida antes de processar -->
+            <button type="submit" class="btn-enviar">
+              Enviar mensagem →
+            </button>
+
+          </form>
+        </div><!-- fim form-contato -->
+
+      </div><!-- fim contato-grid -->
+    </section>
+  </main>
+
+  <!-- ========================================================
+       MODAL DE SUCESSO
+       Exibido pelo JavaScript após validação e envio bem-sucedido
+  ======================================================== -->
+  <div class="modal-overlay" id="modal-sucesso" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal-box">
+      <div class="check" aria-hidden="true">✅</div>
+      <h3 id="modal-titulo">Mensagem enviada!</h3>
+      <p>
+        Obrigado pelo contato, <strong>sua mensagem foi recebida com sucesso!</strong>
+        Responderei em breve pelo e-mail informado.
+      </p>
+      <button id="btn-fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       RODAPÉ
+  ======================================================== -->
+  <footer>
+    <p>© 2025 <span>Isaac Pereira Correa</span> · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <!-- Script principal: tema, menu mobile e validação do formulário -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

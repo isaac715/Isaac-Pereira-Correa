@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Pereira Correa | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVEGAÇÃO PRINCIPAL (idêntica em todas as páginas)
+  ======================================================== -->
+  <nav role="navigation" aria-label="Menu principal">
+    <div class="nav-logo">Isaac<span>.</span>dev</div>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <button id="btn-tema" aria-label="Alternar tema">🌙 Escuro</button>
+  </nav>
+
+  <!-- ========================================================
+       HERO da página
+  ======================================================== -->
+  <header class="hero" role="banner">
+    <div class="hero-badge">Projetos &amp; Trabalhos</div>
+    <h1>Meu <span>Portfólio</span></h1>
+    <p class="hero-sub">
+      Uma seleção dos projetos e trabalhos que desenvolvi ao longo da minha trajetória
+      acadêmica e profissional.
+    </p>
+  </header>
+
+  <!-- ========================================================
+       SEÇÃO: PROJETOS
+  ======================================================== -->
+  <main>
+    <section class="secao" aria-labelledby="titulo-portfolio">
+      <h2 class="secao-titulo" id="titulo-portfolio">Projetos</h2>
+      <p class="secao-desc">
+        Trabalhos realizados na área de tecnologia, programação web e automação de dados.
+      </p>
+
+      <div class="portfolio-grid">
+
+        <!-- Card 1: Este portfólio -->
+        <article class="portfolio-card">
+          <div class="portfolio-thumb" aria-hidden="true">🌐</div>
+          <div class="portfolio-body">
+            <h3>Portfólio Pessoal Online</h3>
+            <p>
+              Site de portfólio desenvolvido do zero com HTML5, CSS3 e JavaScript puro,
+              sem frameworks. Inclui navegação entre páginas, modo escuro, menu mobile
+              responsivo e formulário de contato com validação em JavaScript.
+            </p>
+            <div class="portfolio-tags">
+              <span class="ptag">HTML5</span>
+              <span class="ptag">CSS3</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">GitHub Pages</span>
+            </div>
+            <a href="https://github.com/isaacytbr" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2: Automação de dados John Deere -->
+        <article class="portfolio-card">
+          <div class="portfolio-thumb" aria-hidden="true">🚜</div>
+          <div class="portfolio-body">
+            <h3>Automação de Dados — John Deere Operation Center</h3>
+            <p>
+              Projeto de automação em Python para coleta e análise de dados de máquinas
+              agrícolas a partir da plataforma Operation Center da John Deere.
+              Inclui validação de localização (Maranhão) e extração de telemetria.
+            </p>
+            <div class="portfolio-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Automação</span>
+              <span class="ptag">John Deere API</span>
+              <span class="ptag">Dados Agrícolas</span>
+            </div>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no LinkedIn ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3: Motion / After Effects -->
+        <article class="portfolio-card">
+          <div class="portfolio-thumb" aria-hidden="true">🎬</div>
+          <div class="portfolio-body">
+            <h3>Produção de Conteúdo em Motion</h3>
+            <p>
+              Criação de animações e peças audiovisuais com Adobe After Effects,
+              explorando motion graphics e edição de vídeo como hobby criativo
+              e complemento às habilidades técnicas.
+            </p>
+            <div class="portfolio-tags">
+              <span class="ptag">After Effects</span>
+              <span class="ptag">Motion Graphics</span>
+              <span class="ptag">Edição de Vídeo</span>
+            </div>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" rel="noopener" class="portfolio-link">
+              Ver perfil ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 4: LinkedIn -->
+        <article class="portfolio-card">
+          <div class="portfolio-thumb" aria-hidden="true">💼</div>
+          <div class="portfolio-body">
+            <h3>Perfil Profissional — LinkedIn</h3>
+            <p>
+              Perfil completo com histórico profissional na John Deere, formação
+              acadêmica na UNINTER e certificações em Agricultura de Precisão
+              pela John Deere University.
+            </p>
+            <div class="portfolio-tags">
+              <span class="ptag">Carreira</span>
+              <span class="ptag">John Deere</span>
+              <span class="ptag">Networking</span>
+            </div>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" rel="noopener" class="portfolio-link">
+              Acessar LinkedIn ↗
+            </a>
+          </div>
+        </article>
+
+      </div><!-- fim portfolio-grid -->
+    </section>
+
+    <!-- Chamada para ação -->
+    <section class="secao" style="text-align:center; padding-top: 0;">
+      <p style="color: var(--cinza); margin-bottom: 1.2rem;">
+        Quer saber mais sobre minha trajetória ou tem um projeto em mente?
+      </p>
+      <a href="contato.html" class="btn-primary">Entrar em contato</a>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       RODAPÉ
+  ======================================================== -->
+  <footer>
+    <p>© 2025 <span>Isaac Pereira Correa</span> · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
